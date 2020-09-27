@@ -5,4 +5,4 @@ yum -y install mariadb-server
 systemctl enable mariadb
 systemctl start mariadb
 systemctl enable httpd
-systemctl enable httpd
+systemctl start httpd
