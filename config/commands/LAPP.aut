@@ -1,0 +1,8 @@
+yum install -y httpd
+yum install -y php
+yum install -y postgresql-server
+systemctl enable httpd
+systemctl start httpd
+systemctl enable postgresql
+postgresql-setup initdb
+systemctl start postgresql
