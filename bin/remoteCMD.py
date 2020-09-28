@@ -65,7 +65,7 @@ config_file = f'{home_path}/remoteCMD.py/config/config.cfg'
 
 # Creating program's main function.
 
-def main_func(upDate = args.u, amp = args.a, app = args.p, fil = args.f):
+def main_func(update_file = args.u, amp_file = args.a, app_file = args.p, user_file = args.f):
 	
 	
 	
@@ -106,17 +106,17 @@ def main_func(upDate = args.u, amp = args.a, app = args.p, fil = args.f):
 	
 		with open(config_file,'r') as config_file:
 			for line in config_file:
-				if upDate:
+				if update_file:
 					if 'Update' in line:
 						command_file = line.strip('Update').strip()
-				if amp:
+				if amp_file:
 					if 'AMP' in line:
 						command_file = line.strip('AMP').strip()
-				if app:
+				if app_file:
 					if 'APP' in line:
 						command_file = line.strip('APP').strip()
-				if fil:
-					command_file = fil
+				if user_file:
+					command_file = user_file
 			
 			
 			return command_file 
@@ -134,4 +134,4 @@ def main_func(upDate = args.u, amp = args.a, app = args.p, fil = args.f):
 if len(sys.argv) == 1:
 	print('Positional argument required, use -h option to view help message.')
 else:
-	main_func(upDate = args.u, amp = args.a, app = args.p, fil = args.f)	
+	main_func(update_file = args.u, amp_file = args.a, app_file = args.p, user_file = args.f)	
