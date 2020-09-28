@@ -9,6 +9,7 @@ Default directory is set to your `/home/` but you can change path variables insi
 Make sure to edit paths in `./config/config.cfg` file to change your_user_name part with your own to ensure proper parsing.
 If you have sed already installed you can make this with command `sed -i 's/your_user_name/your_actual_user_name/g' config.cfg` assuming your current directory is `./config.`
 
+Replace entries in `./config/host.cfg` with your own host(s) list.
 Commands stored inside `./config/commands` are written for CentOS/RHEL.Change that if necessary according to your remote host(s) OS.
 
 
