@@ -92,7 +92,7 @@ def main_func(update_file = args.u, amp_file = args.a, app_file = args.p, user_f
 						print('')
 						try:
 							c = Connection(host)
-							cmd = c.run(command)
+							c.run(command)
 						except:
 							print('An error occurred, performing the next command.')
 							continue
